@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:  sans-serif;
+}
+.wrapper{
+    width: 100%;
+}
+.nav-container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+}
+.nav{
+    display: flex;
+    justify-content:space-between ;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+ li{
+    padding: 10px 15px;
+}
+a{
+    text-decoration: none;
+    font-weight: 800;
+    color: #a0a1ac;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.logo{
+    padding: 10px 15px;
+} 
+.content-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    margin-top: 20px;
+   
+}
+
+.right{
+    width: 100%;
+    height: auto;
+}
+.right img{
+    max-width: 100%;
+    height: auto;
+}
+.new{
+    display: flex;
+    
+}
+.new-txt{
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+.txt{
+    padding: 5px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #a0a1ac;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.left h2{
+    font-size: 54px;
+    font-weight: 550;
+    text-transform: uppercase;
+    color: #242942;
+    margin-top: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.left p{
+    font-size: 14px;
+    font-weight: 300;
+     color: #a0a1ac;
+     font-family: 'Barlow Condensed', sans-serif;
+}
+.btn-holder{
+    display: flex;
+    margin-top: 30px;
+   align-items: center;
+}
+.btn{
+    padding: 15px 15px;
+    background-color: #ff5c5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.details{
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+    font-weight: 400;
+     color: black;
+     font-family: 'Barlow Condensed', sans-serif;
+    margin-bottom: 50px;
+    }
+.details a{
+    font-weight: 400;
+    color: blue;
+
+}
+
+/* media query */
+
+@media only screen and (max-width: 500px ){
+    .content-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+      
+    }
+    .links{
+        display: none;
+    }
+    .new{
+        display: none;
+    }
+}
